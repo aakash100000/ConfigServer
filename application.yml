@@ -6,3 +6,11 @@ eureka:
     fetch-registry: true
   instance:
     prefer-ip-address: true
+
+logging:
+  level:
+    org.springframework.security: DEBUG # Enable Spring Security logs
+    org.springframework.web: DEBUG # Enable Spring Web logs
+    feign: DEBUG # Enable Feign logs (if using Feign)
+    org.springframework.cloud.gateway: DEBUG # Enable Gateway logs (for api-gateway)
+    org.springframework.security.oauth2: DEBUG # Enable OAuth2 logs
